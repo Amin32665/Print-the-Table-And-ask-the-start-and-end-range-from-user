@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int range,num;
+   cout<<"Enter the Range = ";
+   cin>>range;
+   
+   int rangetwo=0;
+   do{
+       cout<<"Enter the value of Rangetwo = ";
+       cin>>rangetwo;
+   }
+   while(range>rangetwo);
+  
+   
+   cout<<"\n"<<"Enter the value of number = ";
+   cin>>num;
+   
+   int sum=0;
+   
+   cout<<"\n"<<"Range = "<<range<<" & number = "<<num<<"\n"<<endl;
+   
+   for(int y=range; y<=rangetwo; y++)
+   {
+       sum=y*num;
+       cout<<num<<" * "<<y<<" = "<<sum<<"\n";
+   }
+   
+   
+    return 0;
+}
